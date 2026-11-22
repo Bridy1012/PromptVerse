@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PromptVerse ｜ 只读镜像</title>
+  <meta name="description" content="PromptVerse 只读镜像：收录优质 AI 提示词，支持分类、标签检索与一键复制。" />
+  <meta name="theme-color" content="#f6f7f9" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%231f6feb'/%3E%3Cpath d='M16 7l7.5 4.3v9.4L16 25l-7.5-4.3v-9.4L16 7z' fill='none' stroke='white' stroke-width='1.8' stroke-linejoin='round'/%3E%3Cpath d='M16 7v6.6M16 13.6l7.5 4.3M16 13.6l-7.5 4.3' fill='none' stroke='white' stroke-width='1.8' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div id="app"></div>
+  <div id="toast-root" class="toast-root" aria-live="polite"></div>
+  <div id="modal-root"></div>
+
+  <!-- 纯静态只读版：数据内置于 data/prompts.js，不依赖 Node 服务与 /api -->
+  <script src="data/prompts.js?v=202611220904"></script>
+  <script src="assets/js/static-db.js"></script>
+  <script src="assets/js/ui.js"></script>
+  <script src="assets/js/static-app.js?v=202611220904"></script>
+</body>
+</html>
